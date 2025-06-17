@@ -1,6 +1,5 @@
 import './App.css';
 import React, {Component} from 'react';
-import axios from 'axios';
 
 class App extends Component{
   state = {
@@ -23,6 +22,18 @@ class App extends Component{
     this.setState({selectedFile: null});
     this.setState({fileUploadedSuccessfully: true});
     })
+  }
+  onFileUpload = () => {
+    const formData = new FormData();
+    formData.append(
+      "demo file",
+      this.state.selectedFile,
+      this.state.selectedFile.name
+    )
+    //llamar api (aun no esta disponible)
+    console.log(formData);
+    this.setState({selectedFile: null});
+    this.setState({fileUploadedSuccessfully: true});
   }
 
   fileData = () => {
