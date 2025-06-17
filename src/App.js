@@ -22,7 +22,7 @@ class App extends Component{
   const filename = file.name;
 
   // URL DINAMICA PARA PODER CAMBIARLA CUALQUIER COSA.
-  const apiUrl = `https://7unz2d7s24.execute-api.us-east-2.amazonaws.com/TESTING/testinguploadingimagesforprocessing/${encodeURIComponent(filename)}`;
+  const apiUrl = `putapiendpointherewithbucket${encodeURIComponent(filename)}`;
 
   console.log(`Sending file to: ${apiUrl}`);
 
