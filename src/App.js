@@ -27,18 +27,18 @@ class App extends Component{
   console.log(`Sending file to: ${apiUrl}`);
 
   try {
-    // 2. Make the PUT request with the file and Content-Type header
+    // put con content header
     const response = await axios.put(
       apiUrl,
-      file, // The file object itself is the request body
+      file, // En el body de la request esta el tipo de archivo
       {
         headers: {
-          'Content-Type': file.type // Set the Content-Type based on the file's MIME type
+          'Content-Type': file.type // 
         }
       }
     );
 
-    // The request was successful
+    // Ta bien
     console.log('File uploaded successfully:', response);
     this.setState({
       selectedFile: null,
@@ -46,9 +46,9 @@ class App extends Component{
     });
 
   } catch (error) {
-    // Handle any errors from the API call
+    // Errores
     console.error('Error uploading file:', error);
-    // Optionally, show an error message to the user
+    // Mostrar mensaje en ventana
     alert(`Error uploading file: ${error.message}`);
   }
 };
