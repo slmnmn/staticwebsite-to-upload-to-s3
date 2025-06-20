@@ -57,7 +57,7 @@ class App extends Component{
   if (this.state.selectedFile) {
     return (
       <div>
-        <h2>Detalles de la imagen:</h2>
+        <h2>Detalles de la img:</h2>
         <p>Nombre del archivo: {this.state.selectedFile.name}</p>
         <p>Tipo de archivo: {this.state.selectedFile.type}</p>
       </div>
