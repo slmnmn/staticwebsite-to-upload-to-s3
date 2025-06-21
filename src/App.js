@@ -83,7 +83,7 @@ class App extends Component{
     return (
       <div className="contenedor">
         <h2>Procesamiento de placas</h2>
-        <h3>Subir imagen a S3 con React y API Serverless v2</h3>
+        <h3>Subir imagen a S3 con React y API Serverless en terraform</h3>
         <div>
           <input type= "file" onChange={this.onFileChange}/>
           <button onClick={this.onFileUpload}>
