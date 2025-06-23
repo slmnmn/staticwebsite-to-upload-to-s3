@@ -38,4 +38,4 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET }} --delete
+          aws s3 sync ./build s3://bucket-prueba-despliegue-website-full-localv3 --delete
