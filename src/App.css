@@ -1,3 +1,128 @@
-.contenedor{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background-color: #f4f7f6;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contenedor {
+  background: #ffffff;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
   text-align: center;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #34495e;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.file-input-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.file-input-wrapper:hover {
+  background-color: #2980b9;
+}
+
+.file-input-wrapper input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.file-input-label {
+  font-size: 16px;
+}
+
+.upload-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+  background-color: #27ae60;
+}
+
+.upload-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+
+.file-details {
+  background-color: #ecf0f1;
+  border-left: 4px solid #3498db;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.file-details h2 {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.file-details p {
+  margin: 5px 0;
+  font-size: 0.95em;
+  color: #34495e;
+}
+
+.status-message {
+  margin-top: 20px;
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.success-message {
+  color: #27ae60;
+  background-color: #e8f8f5;
+  border: 1px solid #d0e9c6;
+}
+
+.info-message {
+  color: #3498db;
+  background-color: #eaf2f8;
+  border: 1px solid #b4d8f0;
 }
