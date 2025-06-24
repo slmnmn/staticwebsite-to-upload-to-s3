@@ -36,6 +36,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }} # 'us-east-1'
 
-       ##- name: Deploy to S3 #Remember to change this with the one provided at the end of the infrastructure deploy
-       # run: |
-      #  aws s3 sync ./build s3://bucket-prueba-despliegue-website-terraform-githubactionsv2 --delete 
+      - name: Deploy to S3 #Remember to change this with the one provided at the end of the infrastructure deploy
+        run: |
+          aws s3 sync ./build s3://holabuenosdiasoficial26jarvisprobando --delete 

@@ -21,7 +21,7 @@ class App extends Component{
     const file = this.state.selectedFile;
     const filename = file.name;
 
-    const apiUrl = `https://rp1xmrpnj8.execute-api.us-east-1.amazonaws.com/prod/bucket-prueba-despliegue-imagenes-terraform-githubactionsv2/${encodeURIComponent(filename)}`;
+    const apiUrl = `https://v8c8hkq0y5.execute-api.us-east-1.amazonaws.com/prod/holabuenosdiasjarvisimagenestest/${encodeURIComponent(filename)}`;
 
     console.log(`Sending file to: ${apiUrl}`);
 
