@@ -38,4 +38,4 @@ jobs:
 
       - name: Deploy to S3 #Remember to change this with the one provided at the end of the infrastructure deploy
         run: |
-          aws s3 sync ./build s3://holabuenosdiasoficial26jarvisprobando --delete 
+          aws s3 sync ./build s3://prueba-bucket-estatico-websitev2 --delete 

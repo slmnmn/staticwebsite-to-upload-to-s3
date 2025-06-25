@@ -21,7 +21,7 @@ class App extends Component{
     const file = this.state.selectedFile;
     const filename = file.name;
 
-    const apiUrl = `https://v8c8hkq0y5.execute-api.us-east-1.amazonaws.com/prod/holabuenosdiasjarvisimagenestest/${encodeURIComponent(filename)}`;
+    const apiUrl = `https://lousqn6vc2.execute-api.us-east-1.amazonaws.com/prod/prueba-bucket-imagenes-uploadv2/${encodeURIComponent(filename)}`;
 
     console.log(`Sending file to: ${apiUrl}`);
 
